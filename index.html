@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <title>Practica Bootstrap</title>
+    <link rel="stylesheet" href="css/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/grid.css"> -->
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a href="#" class="navbar-brand">Navbar</a>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menunav" aria-expanded="false" aria-laber="Alternar Menu" name="button">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menunav">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Inicio</a>
+              </li>
+              <!-- IDEA: Boton Desplegable -->
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardropdown" data-toggle="dropdown">
+                  Productos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbardropdown">
+                  <a href="#" class="dropdown-item">Computadoras</a>
+                  <a href="#" class="dropdown-item">Telefonos</a>
+                  <a href="#" class="dropdown-item">SmartTV</a>
+                  <a href="#" class="dropdown-item">SmartWach</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Contacto</a>
+              </li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0" action="index.html" method="post">
+              <input type="search" placeholder="Buscar" class="form-control mr-sm-2" name="" value="">
+              <button type="submit" class="btn btn-primary my-2 my-sm-0" name="button">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="row">
+        <div class="col">
+          <div class="carousel slide" id="slideshow" dta-ride="carousel">
+
+            <!-- IDEA: Indicadores -->
+            <ol class="carousel-indicators">
+              <li data-target="#slideshow" data-slide-to="0" class="active"></li>
+              <li data-target="#slideshow" data-slide-to="1"></li>
+              <li data-target="#slideshow" data-slide-to="2"></li>
+            </ol>
+
+            <!-- IDEA: Slides -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/s1.jpg" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="img/s2.jpg" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="img/s3.jpg" class="d-block w-100" alt="">
+              </div>
+            </div>
+
+            <!-- IDEA: Controles -->
+            <a href="#slideshow" class="carousel-control-prev" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a href="#slideshow" class="carousel-control-next" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Proxima</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="py-4 broder-bottom">
+            <h1 class="text-center">PRODUCTOS</h1>
+          </div>
+        </div>
+      </div>
+      <!-- IDEA: Productos -->
+      <div class="row py-1">
+        <div class="col-lg-3 col-12 col-sm-6 mb-4">
+          <div class="card">
+            <img src="img/1.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h3 class="card-title">iPhone</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+              <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-12 col-sm-6 mb-4">
+          <div class="card">
+            <img src="img/2.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h3 class="card-title">Apple Monitor</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+              <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-12 col-sm-6 mb-4">
+          <div class="card">
+            <img src="img/3.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h3 class="card-title">Camara</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+              <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-12 col-sm-6 mb-4">
+          <div class="card">
+            <img src="img/4.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h3 class="card-title">Smart Watch</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+              <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-12 col-sm-6 mb-4">
+          <div class="card">
+            <img src="img/5.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h3 class="card-title">Keyboard</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+              <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-12 col-sm-6 mb-4">
+          <div class="card">
+            <img src="img/6.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h3 class="card-title">Tablet</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+              <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-12 col-sm-6 mb-4">
+          <div class="card">
+            <img src="img/7.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h3 class="card-title">Laptop</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+              <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-12 col-sm-6 mb-4">
+          <div class="card">
+            <img src="img/8.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h3 class="card-title">Camara</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+              <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="container">
+      <div class="row border-top py-5">
+        <div class="col">
+          <h3 class="lead">AdrianaSanchez.com</h3>
+          <a href="#" class="btn btn-link">Acerca De</a>
+          <a href="#" class="btn btn-link">Contacto</a>
+        </div>
+        <div class="col text-right">
+          <a href="#"  class="btn-btn-link">Subir en Pagina</a>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="js/jquery-3.5.1.min.js" charset="utf-8"></script>
+    <script src="js/popper.min.js" charset="utf-8"></script>
+    <script src="js/js/bootstrap.min.js" charset="utf-8"></script>
+  </body>
+</html>
